@@ -42,8 +42,15 @@ html, body {
 
 /*MAIN */
 
-.main {
+.container {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.main {
+  width: 80%;
   margin-top: 5em;
 }
 
@@ -66,4 +73,11 @@ html, body {
   background: linear-gradient(45deg, var(--color-2), var(--color-1));
   display: block;
   margin: 1em 0
+}
+
+/* NAVIGATION BAR */
+
+.nav {
+  margin-top: 5em;
+  width: 20%;
 }
