@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #000;
+  --color-1: #078e84;
+  --color-2: #04443f;
+  overflow-x: hidden;
+}
+
+/*HEADER */
+
+.header {
+  width: 100%;
+  padding: 1em;
+  background: linear-gradient(45deg, var(--color-2), var(--color-1));
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.hamburger-menu {
+  width: 20%;
+}
+.header h1 {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: italic;
+  width: 75%;
+  text-align: right;
+}
