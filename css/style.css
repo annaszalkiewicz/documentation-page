@@ -13,6 +13,11 @@ html, body {
   --color-2: #04443f;
   overflow-x: hidden;
 }
+p {
+  text-align: justify;
+  text-align-last: left;
+  padding: 0 1em;
+}
 
 /*HEADER */
 
@@ -97,4 +102,21 @@ html, body {
   background-color: var(--color-2);
   margin-top: 1em;
   display: block;
+}
+.example {
+  padding: 1em;
+}
+pre {
+  padding: 0 1em;
+  background-color: #f8f8f8;
+  margin: 0 1em;
+  border-left: solid 5px var(--color-1);
+}
+code {
+  font-weight: bold;
+  color: var(--color-1);
+}
+pre code {
+  font-weight: 400;
+  color: #000;
 }
