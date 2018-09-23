@@ -188,7 +188,8 @@
 				</header>
 				<article>
 					<p>A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). For
-						example,<code>:hover</code> can be used to change a button's color when the user hovers over it.</p>
+						example,
+						<code>:hover</code> can be used to change a button's color when the user hovers over it.</p>
 					<p>Pseudo-classes let you apply a style to an element not only in relation to the content of the document tree, but
 						also in relation to external factors like the history of the navigator (<code>:visited</code>, for example), the status
 						of its content (like <code>:checked</code> on certain form elements), or the position of the mouse (like <code>:hover</code>,
@@ -225,7 +226,8 @@ a:active {
 						 class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/jvRLPJ/">:active</a> by Anna (<a href="https://codepen.io/poros04">@poros04</a>)
 							on <a href="https://codepen.io">CodePen</a>.</p>
 					</div>
-					<li class="note"><strong>Note:</strong> On systems with multi-button mice, CSS3 specifies that the :active pseudo-class must only apply to the primary button; on right-handed mice, this is typically the leftmost button.</li>
+					<li class="note"><strong>Note:</strong> On systems with multi-button mice, CSS3 specifies that the :active pseudo-class
+						must only apply to the primary button; on right-handed mice, this is typically the leftmost button.</li>
 
 				</article>
 			</section>
@@ -235,27 +237,50 @@ a:active {
 					<h2>:any-link</h2>
 				</header>
 				<article>
-						<p>The <code>:any-link</code> CSS pseudo-class selector represents an element that acts as the source anchor of a hyperlink, independent of whether it has been visited. In other words, it matches every <code>a</code>, <code>area</code>, or <code>link</code> element that has an href attribute. Thus, it matches all elements that match <code>:link</code> or <code>:visited</code>.</p>
-						<h3 class="example">Example</h3>
-						<h4>
-							<pre><code>
+					<p>The <code>:any-link</code> CSS pseudo-class selector represents an element that acts as the source anchor of a hyperlink,
+						independent of whether it has been visited. In other words, it matches every <code>a</code>, <code>area</code>, or
+						<code>link</code> element that has an href attribute. Thus, it matches all elements that match <code>:link</code> or
+						<code>:visited</code>.</p>
+					<h3 class="example">Example</h3>
+					<h4>
+						<pre><code>
 /* Selects any element that would be matched by :link or :visited */
 :any-link {
 	color: green;
 }
 						</code></pre>
-						</h4>
-						<div class="embed">
-								<p data-height="265" data-theme-id="dark" data-slug-hash="XPQapX" data-default-tab="css,result" data-user="poros04" data-pen-title=":any-link example" class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/XPQapX/">:any-link example</a> by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-						</div>
-	
-					</article>
+					</h4>
+					<div class="embed">
+						<p data-height="265" data-theme-id="dark" data-slug-hash="XPQapX" data-default-tab="css,result" data-user="poros04" data-pen-title=":any-link example"
+						 class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/XPQapX/">:any-link example</a> by Anna (<a
+							 href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</div>
+
+				</article>
 			</section>
 
 			<section class="main-section" id=":checked">
 				<header class="main-header">
 					<h2>:checked</h2>
 				</header>
+				<article>
+					<p>The <code>:checked</code> CSS pseudo-class selector represents any <code>radio</code>, <code>checkbox</code>, or
+						<code>option</code> in a <code>select</code> element that is checked or toggled to an on state.</p>
+					<h3 class="example">Example</h3>
+					<pre><code>
+/* Matches any checked/selected radio, checkbox, or option */
+:checked {
+	margin-left: 25px;
+	border: 1px solid blue;
+}
+					</code></pre>
+					<div class="embed">
+						<p data-height="265" data-theme-id="dark" data-slug-hash="yxrKPx" data-default-tab="html,result" data-user="poros04" data-pen-title=":checked pseudo-class example"
+						 class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/yxrKPx/">:checked pseudo-class example</a>
+							by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</div>
+					<li class="note"><strong>Note:</strong> Note: Because browsers often treat <code>option</code>s as replaced elements, the extent to which they can be styled with the <code>:checked</code> pseudo-class varies from browser to browser.</li>
+				</article>
 			</section>
 
 			<section class="main-section" id=":default">
