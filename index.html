@@ -176,16 +176,20 @@
 				</li>
 			</ul>
 		</nav>
-	
+
 		<main id="main-doc" class="main">
-	
+
 			<section class="main-section" id="introduction">
 				<header class="main-header">
 					<h2>Introduction</h2>
 				</header>
 				<article>
-					<p>A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). For example,<code>:hover</code>  can be used to change a button's color when the user hovers over it.</p>
-					<p>Pseudo-classes let you apply a style to an element not only in relation to the content of the document tree, but also in relation to external factors like the history of the navigator (<code>:visited</code>, for example), the status of its content (like <code>:checked</code> on certain form elements), or the position of the mouse (like <code>:hover</code>, which lets you know if the mouse is over an element or not).</p>
+					<p>A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). For
+						example,<code>:hover</code> can be used to change a button's color when the user hovers over it.</p>
+					<p>Pseudo-classes let you apply a style to an element not only in relation to the content of the document tree, but
+						also in relation to external factors like the history of the navigator (<code>:visited</code>, for example), the status
+						of its content (like <code>:checked</code> on certain form elements), or the position of the mouse (like <code>:hover</code>,
+						which lets you know if the mouse is over an element or not).</p>
 					<h3 class="example">Example</h3>
 					<pre><code>
 div:hover {
@@ -194,305 +198,328 @@ div:hover {
 					</code></pre>
 				</article>
 			</section>
-	
+
 			<section class="main-section" id=":active">
 				<header class="main-header">
 					<h2>:active</h2>
 				</header>
+				<article>
+					<p>The <code>:active</code> CSS pseudo-class represents an element (such as a button) that is being activated by the
+						user. When using a mouse, "activation" typically starts when the user presses down the primary mouse button.</p>
+					<p>The <code>:active</code> pseudo-class is commonly used on <code>a</code> and <code>button</code> elements. Other
+						common targets of this pseudo-class include elements that contain an activated element, and form elements that are
+						being activated through their associated <code>label</code>.</p>
+					<h3 class="example">Example</h3>
+					<h4>
+						<pre><code>
+a:active {
+	color: red;
+}
+					</code></pre>
+					</h4>
+					<div class="embed">
+						<p data-height="265" data-theme-id="dark" data-slug-hash="jvRLPJ" data-default-tab="css,result" data-user="poros04" data-pen-title=":active"
+						 class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/jvRLPJ/">:active</a> by Anna (<a href="https://codepen.io/poros04">@poros04</a>)
+							on <a href="https://codepen.io">CodePen</a>.</p>
+					</div>
+					<li class="note"><strong>Note:</strong> On systems with multi-button mice, CSS3 specifies that the :active pseudo-class must only apply to the primary button; on right-handed mice, this is typically the leftmost button.</li>
+
+				</article>
 			</section>
-	
+
 			<section class="main-section" id=":any-link">
 				<header class="main-header">
 					<h2>:any-link</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":checked">
 				<header class="main-header">
 					<h2>:checked</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":default">
 				<header class="main-header">
 					<h2>:default</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":defined">
 				<header class="main-header">
 					<h2>:defined</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":dir()">
 				<header class="main-header">
 					<h2>:dir()</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":disabled">
 				<header class="main-header">
 					<h2>:disabled</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":empty">
 				<header class="main-header">
 					<h2>:empty</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":enabled">
 				<header class="main-header">
 					<h2>:enabled</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":first">
 				<header class="main-header">
 					<h2>:first</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":first-child">
 				<header class="main-header">
 					<h2>:first-child</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":first-of-type">
 				<header class="main-header">
 					<h2>:first-of-type</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":fullscreen">
 				<header class="main-header">
 					<h2>:fullscreen</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":focus">
 				<header class="main-header">
 					<h2>:focus</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":focus-visible">
 				<header class="main-header">
 					<h2>:focus-visible</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":focus-within">
 				<header class="main-header">
 					<h2>:focus-within</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":has()">
 				<header class="main-header">
 					<h2>:has()</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":host">
 				<header class="main-header">
 					<h2>:host</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":host()">
 				<header class="main-header">
 					<h2>:host()</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":host-context">
 				<header class="main-header">
 					<h2>:host-context</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":hover">
 				<header class="main-header">
 					<h2>:hover</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":indeterminate">
 				<header class="main-header">
 					<h2>:indeterminate</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":in-range">
 				<header class="main-header">
 					<h2>:in-range</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":invalid">
 				<header class="main-header">
 					<h2>:invalid</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":lang()">
 				<header class="main-header">
 					<h2>:lang()</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":last-child">
 				<header class="main-header">
 					<h2>:last-child</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":last-of-type">
 				<header class="main-header">
 					<h2>:last-of-type</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":left">
 				<header class="main-header">
 					<h2>:left</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":link">
 				<header class="main-header">
 					<h2>:link</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":matches()_(:any())">
 				<header class="main-header">
 					<h2>:matches() (:any())</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":not()">
 				<header class="main-header">
 					<h2>:not()</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":nth-child()">
 				<header class="main-header">
 					<h2>:nth-child()</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":nth-last-child()">
 				<header class="main-header">
 					<h2>:nth-last-child()</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":nth-last-of-type">
 				<header class="main-header">
 					<h2>:nth-last-of-type</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":nth-of-type">
 				<header class="main-header">
 					<h2>:nth-of-type</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":only-child">
 				<header class="main-header">
 					<h2>:only-child</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":only-of-type">
 				<header class="main-header">
 					<h2>:only-of-type</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":optional">
 				<header class="main-header">
 					<h2>:optional</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":out-of-range">
 				<header class="main-header">
 					<h2>:out-of-range</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":placeholder-shown">
 				<header class="main-header">
 					<h2>:placeholder-shown</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":read-only">
 				<header class="main-header">
 					<h2>:read-only</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":read-write">
 				<header class="main-header">
 					<h2>:read-write</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":required">
 				<header class="main-header">
 					<h2>:required</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":right">
 				<header class="main-header">
 					<h2>:right</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":root">
 				<header class="main-header">
 					<h2>:root</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":scope">
 				<header class="main-header">
 					<h2>:scope</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":target">
 				<header class="main-header">
 					<h2>:target</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":valid">
 				<header class="main-header">
 					<h2>:valid</h2>
 				</header>
 			</section>
-	
+
 			<section class="main-section" id=":visited">
 				<header class="main-header">
 					<h2>:visited</h2>
 				</header>
 			</section>
-	
+
 		</main>
 
 	</div>
 
+	<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 </body>
 
 </html>

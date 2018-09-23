@@ -11,6 +11,7 @@ html, body {
   color: #000;
   --color-1: #078e84;
   --color-2: #04443f;
+  --color-3: #e9f5f4;
   overflow-x: hidden;
 }
 p {
@@ -119,4 +120,13 @@ code {
 pre code {
   font-weight: 400;
   color: #000;
+}
+.embed {
+  padding: 1em;
+}
+.note {
+  margin: 0 1em;
+  list-style-type: none;
+  background-color: var(--color-3);
+  padding: 1em;
 }
