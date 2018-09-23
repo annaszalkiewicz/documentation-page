@@ -33,6 +33,7 @@ p {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  z-index: 1000;
 }
 .hamburger-menu {
   width: 20%;
@@ -50,14 +51,13 @@ p {
 
 .container {
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  height: 100%
 }
 .main {
   width: 80%;
-  margin-top: 5em;
+  position: absolute;
+  top: 5em;
+  left: 20%;
 }
 
 /* MAIN SECTIONS */
@@ -80,13 +80,30 @@ p {
   display: block;
   margin: 1em 0
 }
+.main-header h2 {
+  margin-top: 3em;
+}
+#navbar > header > h2 {
+  margin-top: 0;
+}
+#introduction > header > h2:first-child {
+  margin-top: 0;
+}
 
 /* NAVIGATION BAR */
 
 .nav {
-  margin-top: 5em;
   width: 20%;
   border-right: solid 2px var(--color-2);
+  position: fixed;
+  top: 5em;
+  left: 0;
+  height: 100%;
+  overflow-y: auto;
+}
+.nav ul {
+  position: absolute;
+  width: 100%;
 }
 .nav-link {
   display: block;
