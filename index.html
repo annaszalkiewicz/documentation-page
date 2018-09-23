@@ -242,14 +242,12 @@ a:active {
 						<code>link</code> element that has an href attribute. Thus, it matches all elements that match <code>:link</code> or
 						<code>:visited</code>.</p>
 					<h3 class="example">Example</h3>
-					<h4>
-						<pre><code>
+					<pre><code>
 /* Selects any element that would be matched by :link or :visited */
 :any-link {
 	color: green;
 }
 						</code></pre>
-					</h4>
 					<div class="embed">
 						<p data-height="265" data-theme-id="dark" data-slug-hash="XPQapX" data-default-tab="css,result" data-user="poros04" data-pen-title=":any-link example"
 						 class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/XPQapX/">:any-link example</a> by Anna (<a
@@ -279,7 +277,8 @@ a:active {
 						 class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/yxrKPx/">:checked pseudo-class example</a>
 							by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 					</div>
-					<li class="note"><strong>Note:</strong> Note: Because browsers often treat <code>option</code>s as replaced elements, the extent to which they can be styled with the <code>:checked</code> pseudo-class varies from browser to browser.</li>
+					<li class="note"><strong>Note:</strong> Note: Because browsers often treat <code>option</code>s as replaced elements,
+						the extent to which they can be styled with the <code>:checked</code> pseudo-class varies from browser to browser.</li>
 				</article>
 			</section>
 
@@ -287,6 +286,27 @@ a:active {
 				<header class="main-header">
 					<h2>:default</h2>
 				</header>
+				<article>
+					<p>The <code>:default</code> CSS pseudo-class represents any form element that is the default among a group of related
+						elements. This selector may be used on the <code>button</code>, <code>input type="checkbox"</code>, <code>input type="radio"</code>,
+						and <code>option</code> elements.</p>
+					<p>Grouped elements that permit multiple selections may also have multiple defaults, i.e., they may have multiple items
+						initially selected. In this case, all defaults are represented using the <code>:default</code> pseudo-class. For example,
+						you can style the default checkboxes among a group of checkboxes.</p>
+					<h3 class="example">Example</h3>
+					<pre><code>
+/* Selects any default input */
+input:default {
+	background-color: lime;
+}
+					</code></pre>
+					<div class="embed">
+						<p data-height="265" data-theme-id="dark" data-slug-hash="LJvXzY" data-default-tab="html,result" data-user="poros04" data-pen-title=":default pseudo-class example"
+						 class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/LJvXzY/">:default pseudo-class example</a>
+							by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</div>
+
+				</article>
 			</section>
 
 			<section class="main-section" id=":defined">
