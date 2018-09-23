@@ -80,4 +80,21 @@ html, body {
 .nav {
   margin-top: 5em;
   width: 20%;
+  border-right: solid 2px var(--color-2);
+}
+.nav-link {
+  display: block;
+  padding: 1em;
+  color: var(--color-2);
+  font-weight: bold;
+  text-decoration: none;
+  width: 100%;
+}
+.nav-link:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-2);
+  margin-top: 1em;
+  display: block;
 }
