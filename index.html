@@ -425,25 +425,48 @@ div:empty {
 					<h2>:enabled</h2>
 				</header>
 				<article>
-						<p>The <code>:enabled</code> CSS pseudo-class represents any enabled element. An element is enabled if it can be activated (selected, clicked on, typed into, etc.) or accept focus. The element also has a disabled state, in which it can't be activated or accept focus.</p>
-						<h3 class="example">Example</h3>
-						<pre><code>
+					<p>The <code>:enabled</code> CSS pseudo-class represents any enabled element. An element is enabled if it can be activated
+						(selected, clicked on, typed into, etc.) or accept focus. The element also has a disabled state, in which it can't
+						be activated or accept focus.</p>
+					<h3 class="example">Example</h3>
+					<pre><code>
 /* Selects any enabled <code class="html">input</code> */
 input:enabled {
 	color: blue;
 }
 								</code></pre>
-						<div class="embed">
-								<p data-height="265" data-theme-id="dark" data-slug-hash="XPwOZa" data-default-tab="html,result" data-user="poros04" data-pen-title=":enabled pseudo-class example" class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/XPwOZa/">:enabled pseudo-class example</a> by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-						</div>
-	
-					</article>
+					<div class="embed">
+						<p data-height="265" data-theme-id="dark" data-slug-hash="XPwOZa" data-default-tab="html,result" data-user="poros04" data-pen-title=":enabled pseudo-class example"
+						 class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/XPwOZa/">:enabled pseudo-class example</a>
+							by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</div>
+
+				</article>
 			</section>
 
 			<section class="main-section" id=":first">
 				<header class="main-header">
 					<h2>:first</h2>
 				</header>
+				<article>
+					<p>The <code>:first</code> CSS pseudo-class, used with the @page at-rule, represents the first page of a printed document.</p>
+					<h3 class="example">Example</h3>
+					<pre><code>
+/* Selects the first page when printing */
+@page :first {
+	margin-left: 50%;
+	margin-top: 50%;
+}
+								</code></pre>
+					<div class="embed">
+						<p data-height="265" data-theme-id="dark" data-slug-hash="xaNMJW" data-default-tab="css,result" data-user="poros04" data-pen-title=":first pseudo-class example"
+						 class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/xaNMJW/">:first pseudo-class example</a>
+							by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</div>
+					<li class="note"><strong>Note:</strong> You can't change all CSS properties with this pseudo-class. You can only change
+						the margins, orphans, widows, and page breaks of the document. Furthermore, you may only use absolute-length units
+						when defining the margins. All other properties will be ignored.</li>
+				</article>
 			</section>
 
 			<section class="main-section" id=":first-child">
