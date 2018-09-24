@@ -337,6 +337,26 @@ input:default {
 				<header class="main-header">
 					<h2>:dir()</h2>
 				</header>
+				<article>
+						<p>The <code>:dir()</code> CSS pseudo-class matches elements based on the directionality of the text contained in them.</p>
+						<p>The <code>:dir()</code> pseudo-class uses only the semantic value of the directionality, i.e., the one defined in the document itself. It doesn't account for styling directionality, i.e., the directionality set by CSS properties such as <code>direction</code>.</p>
+						<h3 class="example">Example</h3>
+						<pre><code>
+/* Selects any element with right-to-left text */
+:dir(rtl) {
+	background-color: red;
+}
+						</code></pre>
+						<div class="embed">
+								<p data-height="265" data-theme-id="dark" data-slug-hash="wEbyvZ" data-default-tab="html,result" data-user="poros04" data-pen-title=":dir() pseudo-class example" class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/wEbyvZ/">:dir() pseudo-class example</a> by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+						</div>
+						<li class="note"><strong>Note:</strong> Be aware that the behavior of the <code>:dir()</code> pseudo-class is not equivalent to the <code>[dir=…]</code> attribute selectors. The latter match the HTML dir attribute, and ignore elements that lack it — even if they inherit a direction from their parent. (Similarly, <code>[dir=rtl]</code> and <code>[dir=ltr]</code> won't match the auto value.) In contrast, <code>:dir()</code> will match the value calculated by the user agent, even if inherited.</li>
+						<li class="note"><strong>Note:</strong> The :dir() pseudo-class requires one parameter, representing the text directionality you want to target.</li>
+						<li class="note"><code>ltr</code> Target left-to-right elements.</li>
+						<li class="note"><code>rtl</code> Target right-to-left elements.</li>
+						<li class="note">This is an experimental technology. Check the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:dir#Browser_compatibility" target="_blank" rel="noopener noreferrer">Browser compatibility table</a>  carefully before using this in production.</li>
+	
+					</article>
 			</section>
 
 			<section class="main-section" id=":disabled">

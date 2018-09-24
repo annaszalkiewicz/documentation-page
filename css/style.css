@@ -147,3 +147,7 @@ pre code {
   background-color: var(--color-3);
   padding: 1em;
 }
+.note a {
+  color: #000;
+  text-decoration: none;
+}
