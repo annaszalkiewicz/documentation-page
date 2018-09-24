@@ -359,7 +359,8 @@ input:default {
 						to the <code>[dir=…]</code> attribute selectors. The latter match the HTML dir attribute, and ignore elements that
 						lack it — even if they inherit a direction from their parent. (Similarly, <code>[dir=rtl]</code> and <code>[dir=ltr]</code>						won't
 						match the auto value.) In contrast, <code>:dir()</code> will match the value calculated by the user agent, even if
-						inherited.</li>
+						inherited.
+					</li>
 					<li class="note"><strong>Note:</strong> The :dir() pseudo-class requires one parameter, representing the text directionality
 						you want to target.</li>
 					<li class="note"><code>ltr</code> Target left-to-right elements.</li>
@@ -398,6 +399,25 @@ input:disabled {
 				<header class="main-header">
 					<h2>:empty</h2>
 				</header>
+				<article>
+					<p>The <code>:empty</code> CSS pseudo-class represents any element that has no children. Children can be either element
+						nodes or text (including whitespace). Comments or processing instructions do not affect whether an element is considered
+						empty.
+					</p>
+					<h3 class="example">Example</h3>
+					<pre><code>
+/* Selects any <code class="html">div</code> that contains no content */
+div:empty {
+	background: lime;
+}
+							</code></pre>
+					<div class="embed">
+						<p data-height="265" data-theme-id="dark" data-slug-hash="vzwbJV" data-default-tab="html,result" data-user="poros04" data-pen-title=":empty pseudo-class example"
+						 class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/vzwbJV/">:empty pseudo-class example</a>
+							by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</div>
+
+				</article>
 			</section>
 
 			<section class="main-section" id=":enabled">
