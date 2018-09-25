@@ -519,6 +519,39 @@ p:first-of-type {
 				<header class="main-header">
 					<h2>:fullscreen</h2>
 				</header>
+				<article>
+					<p>The <code>:fullscreen</code> CSS pseudo-class represents an element that's displayed when the browser is in fullscreen
+						mode.
+					</p>
+					<h3 class="example">Example</h3>
+					<pre><code>
+/* Selects any <div> that is being displayed in fullscreen mode */
+/* Implemented in Firefox, WebKit/Chrome, and Edge/IE using prefixes; Edge also supports the non-prefixed version */
+div:-moz-full-screen {
+	background-color: pink;
+}
+
+div:-webkit-full-screen {
+	background-color: pink;
+}
+
+div:fullscreen {
+	background-color: pink;
+}
+									</code></pre>
+					<div class="embed">
+						<p data-height="265" data-theme-id="dark" data-slug-hash="NLZLvM" data-default-tab="html,result" data-user="poros04" data-pen-title=":fullscreen pseudo-class example"
+						 class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/NLZLvM/">:fullscreen pseudo-class example</a>
+							by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</div>
+					<li class="note"><strong>NOTE: </strong>This is an experimental technology Check the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:fullscreen#Browser_compatibility"
+						 target="_blank" rel="noopener noreferrer">Browser compatibility table</a> carefully before using this in production.</li>
+					<li class="note">The W3C spec uses the single word <code>:fullscreen</code> without a dash—but both the WebKit and Gecko
+						experimental implementations use a prefixed variant with two words separated by a dash: <code>:-webkit-full-screen</code>						and
+						<code>:-moz-full-screen</code>, respectively. Microsoft Edge and Internet Explorer use the standard convention: <code>:fullscreen</code>						and
+						<code>:-ms-fullscreen</code>, respectively.</li>
+
+				</article>
 			</section>
 
 			<section class="main-section" id=":focus">
