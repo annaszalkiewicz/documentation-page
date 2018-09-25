@@ -742,6 +742,32 @@ var test = document.querySelector('a:has(> img)');
 				<header class="main-header">
 					<h2>:hover</h2>
 				</header>
+				<article>
+					<p>The <code>:hover</code> CSS pseudo-class matches when the user interacts with an element with a pointing device,
+						but does not necessarily activate it. It is generally triggered when the user hovers over an element with the cursor
+						(mouse pointer).</p>
+					<h3 class="example">Example</h3>
+					<pre><code>
+/* Selects any <code class="html">a</code> element when "hovered" */
+a:hover {
+	color: orange;
+}
+					</code></pre>
+					<div class="embed">
+						<p data-height="265" data-theme-id="dark" data-slug-hash="vzqMjx" data-default-tab="css,result" data-user="poros04" data-pen-title=":hover pseudo-class example"
+						 class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/vzqMjx/">:hover pseudo-class example</a>
+							by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</div>
+					<li class="note"><strong>Note: </strong>The <code>:hover</code> pseudo-class is problematic on touchscreens. Depending
+						on the browser, the <code>:hover</code> pseudo-class might never match, match only for a moment after touching an element,
+						or continue to match even after the user has stopped touching and until the user touches another element. Web developers
+						should make sure that content is accessible on devices with limited or non-existent hovering capabilities.</li>
+					<li class="note">Styles defined by the <code>:active</code> pseudo-class will be overridden by any subsequent link-related
+						pseudo-class (<code>:link</code>, <code>:visited</code>, or <code>:active</code>) that has at least equal specificity.
+						To style links appropriately, put the <code>:hover</code> rule after the <code>:link</code> and <code>:visited</code>						rules
+						but before the <code>:active</code> one, as defined by the LVHA-order: <code>:link</code> — <code>:visited</code> —
+						<code>:hover</code> — <code>:active</code>.</li>
+				</article>
 			</section>
 
 			<section class="main-section" id=":indeterminate">
