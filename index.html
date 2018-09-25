@@ -602,7 +602,9 @@ input:focus {
 						 class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/RYzqGz/">:focus-visible pseudo-class example</a>
 							by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 					</div>
-					<li class="note"><strong>NOTE: </strong> Firefox supports similar functionality through an older, prefixed pseudo-class — <code>:-moz-focusring</code>. See the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:-moz-focusring" target="_blank" rel="noopener noreferrer">:-moz-focusring page</a> for more details.</li>
+					<li class="note"><strong>NOTE: </strong> Firefox supports similar functionality through an older, prefixed pseudo-class
+						— <code>:-moz-focusring</code>. See the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:-moz-focusring"
+						 target="_blank" rel="noopener noreferrer">:-moz-focusring page</a> for more details.</li>
 
 				</article>
 			</section>
@@ -611,6 +613,26 @@ input:focus {
 				<header class="main-header">
 					<h2>:focus-within</h2>
 				</header>
+				<article>
+					<p>The <code>:focus-within</code> CSS pseudo-class represents an element that has received focus or contains an element
+						that has received focus. In other words, it represents an element that is itself matched by the <code>:focus</code>						pseudo-class
+						or has a descendant that is matched by <code>:focus</code>.</p>
+					<h3 class="example">Example</h3>
+					<pre><code>
+/* Selects a <code class="html">div</code> when one of its descendants is focused */
+div:focus-within {
+	background: cyan;
+}
+									</code></pre>
+					<div class="embed">
+						<p data-height="265" data-theme-id="dark" data-slug-hash="MqMzQr" data-default-tab="html,result" data-user="poros04" data-pen-title=":focus-within pseudo-class example"
+						 class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/MqMzQr/">:focus-within pseudo-class example</a>
+							by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</div>
+					<li class="note"><strong>NOTE: </strong> This selector is useful, to take a common example, for highlighting an entire
+						<code class="html">form</code> container when the user focuses on one of its <code class="html">input</code> fields.</li>
+
+				</article>
 			</section>
 
 			<section class="main-section" id=":has()">
