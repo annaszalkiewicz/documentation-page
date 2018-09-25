@@ -586,6 +586,25 @@ input:focus {
 				<header class="main-header">
 					<h2>:focus-visible</h2>
 				</header>
+				<article>
+					<p>The <code>:focus-visible</code> pseudo-class applies while an element matches the <code>:focus</code> pseudo-class
+						and the UA determines via heuristics that the focus should be made evident on the element. (Many browsers show a “focus
+						ring” by default in this case.)</p>
+					<p>This selector is useful to provide a different focus indicator based on the user’s input modality (mouse vs. keyboard).</p>
+					<h3 class="example">Example</h3>
+					<pre><code>
+.focus-visible-only:focus-visible {
+	outline: 4px dashed darkorange;
+}
+									</code></pre>
+					<div class="embed">
+						<p data-height="265" data-theme-id="dark" data-slug-hash="RYzqGz" data-default-tab="html,result" data-user="poros04" data-pen-title=":focus-visible pseudo-class example"
+						 class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/RYzqGz/">:focus-visible pseudo-class example</a>
+							by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</div>
+					<li class="note"><strong>NOTE: </strong> Firefox supports similar functionality through an older, prefixed pseudo-class — <code>:-moz-focusring</code>. See the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:-moz-focusring" target="_blank" rel="noopener noreferrer">:-moz-focusring page</a> for more details.</li>
+
+				</article>
 			</section>
 
 			<section class="main-section" id=":focus-within">
