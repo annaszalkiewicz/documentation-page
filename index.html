@@ -525,7 +525,7 @@ p:first-of-type {
 					</p>
 					<h3 class="example">Example</h3>
 					<pre><code>
-/* Selects any <div> that is being displayed in fullscreen mode */
+/* Selects any <code class="html">div</code> that is being displayed in fullscreen mode */
 /* Implemented in Firefox, WebKit/Chrome, and Edge/IE using prefixes; Edge also supports the non-prefixed version */
 div:-moz-full-screen {
 	background-color: pink;
@@ -558,6 +558,28 @@ div:fullscreen {
 				<header class="main-header">
 					<h2>:focus</h2>
 				</header>
+				<article>
+					<p>The <code>:focus</code> CSS pseudo-class represents an element (such as a form input) that has received focus. It
+						is generally triggered when the user clicks or taps on an element or selects it with the keyboard's "tab" key.</p>
+					<h3 class="example">Example</h3>
+					<pre><code>
+/* Selects any <code class="html">input</code> when focused */
+input:focus {
+	color: red;
+}
+									</code></pre>
+					<div class="embed">
+						<p data-height="265" data-theme-id="dark" data-slug-hash="OoeBgd" data-default-tab="html,result" data-user="poros04" data-pen-title=":focus pseudo-class example"
+						 class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/OoeBgd/">:focus pseudo-class example</a>
+							by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</div>
+					<li class="note"><strong>NOTE: </strong>This pseudo-class applies only to the focused element itself. Use <code>:focus-within</code>						if
+						you want to select an element that contains a focused element.</li>
+					<li class="note"><code>:focus { outline: none; }</code> Never just remove the focus outline (visible focus indicator)
+						without replacing it with a focus outline that will pass. Quick Tip: <a href="Never just remove the focus outline (visible focus indicator) without replacing it with a focus outline that will pass"
+						 target="_blank" rel="noopener noreferrer">Never remove CSS outlines</a></li>
+
+				</article>
 			</section>
 
 			<section class="main-section" id=":focus-visible">
