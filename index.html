@@ -673,7 +673,9 @@ var test = document.querySelector('a:has(> img)');
 }
 					</code></pre>
 					<div class="embed">
-						<p data-height="265" data-theme-id="dark" data-slug-hash="YOogKd" data-default-tab="html,result" data-user="poros04" data-pen-title=":host pseudo-class example" class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/YOogKd/">:host pseudo-class example</a> by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+						<p data-height="265" data-theme-id="dark" data-slug-hash="YOogKd" data-default-tab="html,result" data-user="poros04" data-pen-title=":host pseudo-class example"
+						 class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/YOogKd/">:host pseudo-class example</a> by
+							Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 					</div>
 				</article>
 			</section>
@@ -682,6 +684,25 @@ var test = document.querySelector('a:has(> img)');
 				<header class="main-header">
 					<h2>:host()</h2>
 				</header>
+				<article>
+					<p>The <code>:host()</code> CSS pseudo-class function selects the shadow host of the shadow DOM containing the CSS it
+						is used inside (so you can select a custom element from inside its shadow DOM) — but only if the selector given as
+						the function's parameter matches the shadow host.</p>
+					<p>The most obvious use of this is to put a class name only on certain custom element instances, and then include the relevant class selector as the function argument. You can't use this with a descendant selector expression to select only instances of the custom element that are inside a particular ancestor. That's the job of <code>:host-context()</code>.</p>
+					<h3 class="example">Example</h3>
+					<pre><code>
+/* Selects a shadow root host, only if it is matched by the selector argument */ 
+:host(.special-custom-element) {
+	font-weight: bold;
+}
+					</code></pre>
+					<div class="embed">
+						<p data-height="265" data-theme-id="dark" data-slug-hash="YOogKd" data-default-tab="html,result" data-user="poros04" data-pen-title=":host pseudo-class example"
+						 class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/YOogKd/">:host pseudo-class example</a> by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</div>
+					<li class="note"><strong>Note: </strong>This is an experimental technology. Check <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:host()#Browser_compatibility"
+					target="_blank" rel="noopener noreferrer">the Browser compatibility table</a> carefully before using this in production.</li>
+				</article>
 			</section>
 
 			<section class="main-section" id=":host-context">
