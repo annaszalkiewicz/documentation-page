@@ -639,6 +639,23 @@ div:focus-within {
 				<header class="main-header">
 					<h2>:has()</h2>
 				</header>
+				<article>
+					<p>The <code>:has()</code> CSS pseudo-class represents an element if any of the selectors passed as parameters (relative
+						to the <code>:scope</code> of the given element), match at least one element.</p>
+					<p>The <code>:has()</code> pseudo-class takes a selector list as an argument. In the current specification <code>:has</code>						is
+						not marked as part of the live selector profile, which means it can not be used within stylesheets; only with functions
+						like <code>document.querySelector()</code>.</p>
+					<h3 class="example">Example</h3>
+					<pre><code>
+/* Selects any <code class="html">a</code>, as long as it has an <code class="html">img</code> element directly inside it  */
+/* Note that this is not supported in any browser yet */
+/* It also isn't intended to work in stylesheets */
+var test = document.querySelector('a:has(> img)');
+					</code></pre>
+					<li class="note"><strong>NOTE: </strong>This is an experimental technology. Check the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:has#Browser_compatibility"
+					target="_blank" rel="noopener noreferrer">Browser compatibility table</a> carefully before using this in production.</li>
+
+				</article>
 			</section>
 
 			<section class="main-section" id=":host">
