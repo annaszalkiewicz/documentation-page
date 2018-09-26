@@ -898,6 +898,21 @@ input:indeterminate {
 				<header class="main-header">
 					<h2>:in-range</h2>
 				</header>
+				<article>
+					<p>The <code>:in-range</code> CSS pseudo-class represents an <code class="html">input</code> element whose current value is within the range limits specified by the min and max attributes.</p>
+					<p>This pseudo-class is useful for giving the user a visual indication that a field's current value is within the permitted limits.</p>
+					<h3 class="example">Example</h3>
+					<pre><code>
+/* Selects any <code class="html">input</code>, but only when it has a range specified, and its value is inside that range */
+input:in-range {
+	background-color: rgba(0, 255, 0, 0.25);
+}
+					</code></pre>
+					<div class="embed">
+						<p data-height="265" data-theme-id="dark" data-slug-hash="LgPPey" data-default-tab="css,result" data-user="poros04" data-pen-title=":in-range & :out-of-range pseudo-class example" class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/LgPPey/">:in-range & :out-of-range pseudo-class example</a> by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</div>
+					<li class="note"><strong>Note: </strong>This pseudo-class only applies to elements that have (and can take) a range limitation. In the absence of such a limitation, the element can neither be "in-range" nor "out-of-range."</li>
+				</article>
 			</section>
 
 			<section class="main-section" id=":invalid">
