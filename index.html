@@ -939,6 +939,21 @@ input:invalid {
 				<header class="main-header">
 					<h2>:lang()</h2>
 				</header>
+				<article>
+					<p>The <code>:lang()</code> CSS pseudo-class matches elements based on the language they are determined to be in.</p>
+					<p><code>:lang()</code> pseudo-class needs language code as a paramater. E.g. "en" for English</p>
+					<h3 class="example">Example</h3>
+					<pre><code>
+/* Selects any <code class="html">p</code> in English (en) */
+p:lang(en) {
+	quotes: '\201C' '\201D' '\2018' '\2019';
+}
+					</code></pre>
+					<div class="embed">
+						<p data-height="265" data-theme-id="dark" data-slug-hash="wYwvXK" data-default-tab="html,result" data-user="poros04" data-pen-title=":lang() pseudo-class example" class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/wYwvXK/">:lang() pseudo-class example</a> by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</div>
+					<li class="note"><strong>Note: </strong>In HTML, the language is determined by a combination of the lang attribute, the <code class="html">meta</code> element, and possibly by information from the protocol (such as HTTP headers). For other document types there may be other document methods for determining the language.</li>
+				</article>
 			</section>
 
 			<section class="main-section" id=":last-child">
