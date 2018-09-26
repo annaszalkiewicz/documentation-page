@@ -1098,6 +1098,26 @@ a:link {
 				<header class="main-header">
 					<h2>:not()</h2>
 				</header>
+				<article>
+					<p>The <code>:not()</code> CSS pseudo-class represents elements that do not match a list of selectors. Since it
+						prevents specific items from being selected, it is known as the negation pseudo-class.</p>
+					<h3 class="example">Example</h3>
+					<pre><code>
+/* Selects any element that is NOT a paragraph */
+:not(p) {
+	color: blue;
+}
+							</code></pre>
+					<div class="embed">
+						<p data-height="265" data-theme-id="dark" data-slug-hash="qJWEKB" data-default-tab="html,result" data-user="poros04"
+						 data-pen-title=":not() pseudo-class example" class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/qJWEKB/">:not()
+								pseudo-class example</a> by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</div>
+					<li class="note"><strong>Note: </strong>Many browsers support this functionality through an older, prefixed
+						pseudo-class — <code>:any()</code>, including older versions of Chrome, Firefox and Safari. This works in exactly
+						the same way as <code>:matches()</code>, except that it requires vendor prefixes.</li>
+
+				</article>
 			</section>
 
 			<section class="main-section" id=":nth-child()">
