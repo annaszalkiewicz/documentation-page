@@ -1070,6 +1070,28 @@ a:link {
 				<header class="main-header">
 					<h2>:matches() (:any())</h2>
 				</header>
+				<article>
+					<p>The <code>:matches()</code> CSS pseudo-class function takes a selector list as its argument, and selects any
+						element that can be selected by one of the selectors in that list. This is useful for writing large selectors in
+						a more compact form.</p>
+					<h3 class="example">Example</h3>
+					<pre><code>
+/* Selects any paragraph inside a header, main or footer element that is being hovered */
+:matches(header, main, footer) p:hover {
+	color: red;
+	cursor: pointer;
+}
+						</code></pre>
+					<div class="embed">
+						<p data-height="265" data-theme-id="dark" data-slug-hash="XxrJzO" data-default-tab="html,result" data-user="poros04"
+						 data-pen-title=":matches() (:any()) pseudo-class example" class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/XxrJzO/">:matches()
+								(:any()) pseudo-class example</a> by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</div>
+					<li class="note"><strong>Note: </strong>Many browsers support this functionality through an older, prefixed
+						pseudo-class — <code>:any()</code>, including older versions of Chrome, Firefox and Safari. This works in exactly
+						the same way as <code>:matches()</code>, except that it requires vendor prefixes.</li>
+
+				</article>
 			</section>
 
 			<section class="main-section" id=":not()">
