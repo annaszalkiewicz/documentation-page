@@ -1030,7 +1030,9 @@ p:last-of-type {
 	margin: 2in 3in;
 }
 					</code></pre>
-					<li class="note"><strong>Note: </strong>This pseudo-class can be used to change only the <code>margin</code>, <code>padding</code>, <code>border</code>, and <code>background</code> properties of the page box. All other properties will be ignored, and only the page box, not the document content on the page, will be affected.</li>
+					<li class="note"><strong>Note: </strong>This pseudo-class can be used to change only the <code>margin</code>,
+						<code>padding</code>, <code>border</code>, and <code>background</code> properties of the page box. All other
+						properties will be ignored, and only the page box, not the document content on the page, will be affected.</li>
 
 				</article>
 			</section>
@@ -1039,6 +1041,29 @@ p:last-of-type {
 				<header class="main-header">
 					<h2>:link</h2>
 				</header>
+				<article>
+					<p>The <code>:link</code> CSS pseudo-class represents an element that has not yet been visited. It matches every
+						unvisited <code class="html">a</code>, <code class="html">area</code>, or <code class="html">link</code> element
+						that has an href attribute.</p>
+					<h3 class="example">Example</h3>
+					<pre><code>
+/* Selects any <code class="html">a</code> that has not been visited yet */
+a:link {
+	color: red;
+}
+					</code></pre>
+					<div class="embed">
+						<p data-height="265" data-theme-id="dark" data-slug-hash="VEZYKw" data-default-tab="html,result" data-user="poros04"
+						 data-pen-title=":link pseudo-class example" class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/VEZYKw/">:link
+								pseudo-class example</a> by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</div>
+					<li class="note"><strong>Note: </strong>Styles defined by the <code>:link</code> pseudo-class will be overridden
+						by any subsequent link-related pseudo-class (<code>:active</code>, <code>:hover</code>, or <code>:visited</code>)
+						that has at least equal specificity. To style links appropriately, put the <code>:link</code> rule before all
+						other link-related rules, as defined by the LVHA-order: <code>:link</code> — <code>:visited</code> — <code>:hover</code>
+						— <code>:active</code>.</li>
+
+				</article>
 			</section>
 
 			<section class="main-section" id=":matches()_(:any())">
