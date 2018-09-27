@@ -1170,6 +1170,25 @@ counting backwards from the last one */
 				<header class="main-header">
 					<h2>:nth-last-of-type</h2>
 				</header>
+				<article>
+					<p>The <code>:nth-last-of-type()</code> CSS pseudo-class matches elements of a given type, based on their position
+						among a group of siblings, counting from the end.</p>
+					<h3 class="example">Example</h3>
+					<pre><code>
+/* Selects every fourth <code class="html">p</code> element
+among any group of siblings, counting backwards from the last one */
+p:nth-last-of-type(4n) {
+	color: lime;
+}
+					</code></pre>
+					<div class="embed">
+						<p data-height="265" data-theme-id="dark" data-slug-hash="QZWjmj" data-default-tab="html,result" data-user="poros04"
+						 data-pen-title=":nth-last-of-type pseudo-class example" class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/QZWjmj/">:nth-last-of-type
+								pseudo-class example</a> by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</div>
+					<li class="note"><strong>Note: </strong>This pseudo-class is essentially the same as <code>:nth-of-type</code>,
+						except it counts items backwards from the end, not forwards from the beginning.</li>
+				</article>
 			</section>
 
 			<section class="main-section" id=":nth-of-type">
