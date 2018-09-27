@@ -1331,6 +1331,30 @@ background-color: rgba(255, 0, 0, 0.25);
 				<header class="main-header">
 					<h2>:read-only</h2>
 				</header>
+				<article>
+					<p>The <code>:read-only</code> CSS pseudo-class represents an element (such as a locked text input) that is not
+						editable by the user.</p>
+					<h3 class="example">Example</h3>
+					<pre><code>
+/* Selects any <code class="html">input</code> element that is read-only */
+/* Supported in Firefox with a prefix */
+input:-moz-read-only {
+	background-color: #ccc;
+}
+
+/* Supported in Blink/WebKit/Edge without a prefix */
+input:read-only {
+	background-color: #ccc;
+}
+					</code></pre>
+					<div class="embed">
+						<p data-height="265" data-theme-id="dark" data-slug-hash="yRLOKW" data-default-tab="css,result" data-user="poros04"
+						 data-pen-title=":read-only pseudo-class example" class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/yRLOKW/">:read-only
+								pseudo-class example</a> by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</div>
+					<li class="note"><strong>Note: </strong>This selector doesn't just select <code class="html">input</code>s with
+						readonly set on them; it will select any element that cannot be edited by the user.</li>
+				</article>
 			</section>
 
 			<section class="main-section" id=":read-write">
