@@ -1218,6 +1218,23 @@ p:nth-of-type(4n) {
 				<header class="main-header">
 					<h2>:only-child</h2>
 				</header>
+				<article>
+					<p>The <code>:only-child</code> CSS pseudo-class represents an element without any siblings. This is the same as
+						<code>:first-child:last-child</code> or <code>:nth-child(1):nth-last-child(1)</code>, but with a lower
+						specificity.</p>
+					<h3 class="example">Example</h3>
+					<pre><code>
+/* Selects each <code class="html">p</code> but only if it is the only child of its parent */
+p:only-child {
+	background-color: lime;
+}
+					</code></pre>
+					<div class="embed">
+						<p data-height="265" data-theme-id="dark" data-slug-hash="ePYpQR" data-default-tab="html,result" data-user="poros04"
+						 data-pen-title=":only-child pseudo-class example" class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/ePYpQR/">:only-child
+								pseudo-class example</a> by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</div>
+				</article>
 			</section>
 
 			<section class="main-section" id=":only-of-type">
