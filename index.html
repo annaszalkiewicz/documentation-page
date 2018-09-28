@@ -1463,6 +1463,26 @@ background: yellow;
 				<header class="main-header">
 					<h2>:scope</h2>
 				</header>
+				<article>
+					<p>The <code>:scope</code> CSS pseudo-class represents elements that are a reference point for selectors to match
+						against.</p>
+					<p>Currently, when used in a stylesheet, <code>:scope</code> is the same as <code>:root</code>, since there is not
+						at this time a way to explicitly establish a scoped element. When used from a DOM API such as <code>querySelector()</code>,
+						<code>querySelectorAll()</code>, <code>matches()</code>, or <code>Element.closest()</code>, <code>:scope</code>
+						matches the element you called the method on.</p>
+					<h3 class="example">Example</h3>
+					<pre><code>
+/* Selects a scoped element */
+:scope {
+	background-color: lime;
+}
+					</code></pre>
+					<div class="embed">
+						<p data-height="265" data-theme-id="dark" data-slug-hash="JmoPQR" data-default-tab="js,result" data-user="poros04"
+						 data-pen-title=":scope pseudo-class example" class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/JmoPQR/">:scope
+								pseudo-class example</a> by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</div>
+				</article>
 			</section>
 
 			<section class="main-section" id=":target">
