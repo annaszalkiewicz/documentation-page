@@ -12,6 +12,7 @@ html, body {
   --color-1: #078e84;
   --color-2: #04443f;
   --color-3: #e9f5f4;
+  --hover: #BC9345;
   overflow-x: hidden;
 }
 p {
@@ -38,6 +39,10 @@ p {
 }
 .hamburger-menu {
   width: 20%;
+}
+.hamburger-menu:hover, .hamburger-menu:focus {
+  cursor: pointer;
+  color: var(--hover);
 }
 .header h1 {
   text-transform: uppercase;
@@ -187,4 +192,7 @@ article p a {
   color: #fff;
   text-decoration: underline;
   font-weight: bold;
+}
+a:hover, a:focus {
+  color: var(--hover);
 }
