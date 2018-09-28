@@ -56,7 +56,7 @@ p {
 .main {
   width: 80%;
   position: absolute;
-  top: 5em;
+  top: 4em;
   left: 20%;
 }
 
@@ -96,9 +96,9 @@ p {
   width: 20%;
   border-right: solid 2px var(--color-2);
   position: fixed;
-  top: 5em;
+  top: 4em;
   left: 0;
-  height: 91%;
+  height: 93%;
   overflow-y: auto;
 }
 .nav ul {
