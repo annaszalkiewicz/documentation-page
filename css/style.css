@@ -94,7 +94,7 @@ p {
 /* NAVIGATION BAR */
 
 .nav {
-  width: 20%;
+  width: 80%;
   border-right: solid 2px var(--color-2);
   position: fixed;
   top: 4em;
