@@ -1522,12 +1522,27 @@ input:valid {
 					<div class="embed">
 						<p data-height="265" data-theme-id="dark" data-slug-hash="GYgRPz" data-default-tab="html,result" data-user="poros04" data-pen-title=":valid pseudo-class example" class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/GYgRPz/">:valid pseudo-class example</a> by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 					</div>
+				</article>
 			</section>
 
 			<section class="main-section" id=":visited">
 				<header class="main-header">
 					<h2>:visited</h2>
 				</header>
+				<article>
+					<p>The <code>:visited</code> CSS pseudo-class represents links that the user has already visited. For privacy reasons, the styles that can be modified using this selector are very limited.</p>
+					<p>Styles defined by the <code>:visited</code> pseudo-class will be overridden by any subsequent link-related pseudo-class (<code>:link</code>, <code>:hover</code>, or <code>:active</code>) that has at least equal specificity. To style links appropriately, put the :visited rule after the <code>:link</code> rule but before the <code>:hover</code> and <code>:active</code> rules, as defined by the LVHA-order: <code>:link</code> — <code>:visited</code> — <code>:hover</code> — <code>:active</code>.</p>
+					<h3 class="example">Example</h3>
+					<pre><code>
+/* Selects any <code class="html">a</code> that has been visited */
+a:visited {
+	color: green;
+}
+					</code></pre>
+					<div class="embed">
+						<p data-height="265" data-theme-id="dark" data-slug-hash="QZwwmp" data-default-tab="css,result" data-user="poros04" data-pen-title=":visited pseudo-class example" class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/QZwwmp/">:visited pseudo-class example</a> by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</div>
+				</article>
 			</section>
 
 		</main>
