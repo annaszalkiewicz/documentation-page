@@ -1361,6 +1361,31 @@ input:read-only {
 				<header class="main-header">
 					<h2>:read-write</h2>
 				</header>
+				<article>
+					<p>The <code>:read-write CSS</code> pseudo-class represents an element (such as a text input) that is editable by
+						the user.</p>
+					<h3 class="example">Example</h3>
+					<pre><code>
+/* Selects any <code class="html">input</code> element that is editable */
+/* Supported in Firefox with a prefix */
+input:-moz-read-write {
+  background-color: #bbf;
+}
+
+/* Supported in Blink/WebKit/Edge without a prefix */
+input:read-write {
+  background-color: #bbf;
+}
+					</code></pre>
+					<div class="embed">
+						<p data-height="265" data-theme-id="dark" data-slug-hash="KGKrpj" data-default-tab="css,result" data-user="poros04"
+						 data-pen-title=":read-write pseudo-class example" class="codepen">See the Pen <a href="https://codepen.io/poros04/pen/KGKrpj/">:read-write
+								pseudo-class example</a> by Anna (<a href="https://codepen.io/poros04">@poros04</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					</div>
+					<li class="note"><strong>Note: </strong>This selector doesn't just select <code class="html">input</code>s; it
+						will select any element that can be edited by the user, such as a <code class="html">p</code> element with <code>contenteditable</code>
+						set on it.</li>
+				</article>
 			</section>
 
 			<section class="main-section" id=":required">
