@@ -157,12 +157,34 @@ pre code {
   padding: 1em;
 }
 .note a {
-  color: #000;
-  text-decoration: none;
+  color: var(--color-2);
+  text-decoration: underline;
+  font-weight: bold;
 }
 .html::before {
   content: "<";
 }
 .html::after {
   content: ">";
+}
+article p a {
+  color: var(--color-2);
+  font-weight: bold;
+}
+
+.footer {
+  width: 100%;
+  padding: 1em;
+  background: linear-gradient(45deg, var(--color-2), var(--color-1));
+  color: #fff;
+  margin-top: 1em;
+}
+.footer p {
+  text-align: center;
+  text-align-last: center;
+}
+.footer a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
 }
