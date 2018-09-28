@@ -1417,7 +1417,9 @@ input:required {
 				<article>
 					<p>The <code>:right</code> CSS pseudo-class, used with the @page at-rule, represents all right-hand pages of a
 						printed document.</p>
-					<p>Whether a given page is "left" or "right" is determined by the major writing direction of the document. For example, if the first page has a major writing direction of left-to-right then it will be a <code>:right</code> page; if it has a major writing direction of right-to-left then it will be a <code>:left</code> page.</p>
+					<p>Whether a given page is "left" or "right" is determined by the major writing direction of the document. For
+						example, if the first page has a major writing direction of left-to-right then it will be a <code>:right</code>
+						page; if it has a major writing direction of right-to-left then it will be a <code>:left</code> page.</p>
 					<h3 class="example">Example</h3>
 					<pre><code>
 /* Selects any right-hand pages when printing */
@@ -1436,6 +1438,25 @@ input:required {
 				<header class="main-header">
 					<h2>:root</h2>
 				</header>
+				<article>
+					<p>The <code>:root</code> CSS pseudo-class matches the root element of a tree representing the document. In HTML,
+						:root represents the <code class="html">html</code> element and is identical to the selector html, except that
+						its specificity is higher.</p>
+					<h3 class="example">Example</h3>
+					<pre><code>
+/* Selects the root element of the document: <code class="html">html</code> in the case of HTML */
+:root {
+background: yellow;
+}
+/* Declares CSS variables */
+:root {
+  --main-color: hotpink;
+  --pane-padding: 5px 42px;
+}
+					</code></pre>
+
+					<li class="note"><strong>Note: </strong><code>:root</code> can be useful for declaring global CSS variables</li>
+				</article>
 			</section>
 
 			<section class="main-section" id=":scope">
