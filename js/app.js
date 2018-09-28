@@ -13,3 +13,15 @@ const toggleMenu = () => {
 }
 
 icon.addEventListener('click', toggleMenu);
+
+// Hide navigation bar when clicking on link
+
+const links = document.getElementsByClassName('nav-link');
+
+const hideNav = () => {
+  navbar.classList.remove('show');
+}
+
+for (const link of links) {
+  link.addEventListener('click', hideNav);
+}
