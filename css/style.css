@@ -200,3 +200,47 @@ article p a {
 a:hover, a:focus {
   color: var(--hover);
 }
+/* SCROLLBAR */ 
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border: solid 1px var(--color-1);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-2); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-1);
+  transition: all .5s ease; 
+}
+
+@media screen and (min-width: 1280px) {
+  .hamburger-menu {
+    display: none;
+  }
+  .header h1 {
+    width: 100%;
+    font-size: 2em;
+    padding-right: 1em;
+  }
+  .nav {
+    top: 5em;
+    width: 320px;
+    height: 90%;
+  }
+  .main {
+    top: 5em;
+    left: 320px;
+    width: calc(100% - 320px);
+  }
+}
