@@ -3,7 +3,7 @@
 
 ## Project overview
 
-CSS Pseudo-classes you don't know is technical documentation page created as a part Responsive Web Design Certification by freeCodeCamp.
+CSS Pseudo-classes you don't know is technical documentation page created as a part Responsive Web Design Certification by freeCodeCamp. You can find here all pseudo-classes list with examples.
 
 ## How to run project?
 
