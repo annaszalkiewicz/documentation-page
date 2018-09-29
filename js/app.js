@@ -19,7 +19,9 @@ icon.addEventListener('click', toggleMenu);
 const links = document.getElementsByClassName('nav-link');
 
 const hideNav = () => {
-  navbar.classList.remove('show');
+  if (window.innerWidth < 1280) {
+    navbar.classList.remove('show');
+  }
 }
 
 for (const link of links) {
