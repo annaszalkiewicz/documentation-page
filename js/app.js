@@ -27,3 +27,13 @@ const hideNav = () => {
 for (const link of links) {
   link.addEventListener('click', hideNav);
 }
+
+// Always show navigation bar on desktops
+
+const showNav = () => {
+  if (window.innerWidth >= 1280) {
+    navbar.classList.add('show');
+  }
+}
+
+document.addEventListener('DOMContentLoaded', showNav);
